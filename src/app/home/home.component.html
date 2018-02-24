@@ -1,0 +1,15 @@
+<div class="container">
+    <h3>Listings</h3>
+   
+      <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+          
+          <div *ngFor="let d of viewData" class="row" style="border-bottom:1px dotted #000">
+              <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12">
+                  <h4>{{d.title}}</h4>
+                  <p>{{d.detail}}</p>
+                  
+              </div>
+  
+          </div>
+      </div>
+ </div>
