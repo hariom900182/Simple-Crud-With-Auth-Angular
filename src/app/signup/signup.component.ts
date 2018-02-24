@@ -18,8 +18,8 @@ export class SignupComponent implements OnInit {
   signupForm = this.formBuilder.group({
       username: ['', Validators.required],
       email: ['', Validators.required],
-      password: ['', Validators.required],
-      repeatPassword: ['', Validators.required]
+      password: ['', Validators.required]
+     
   });
   constructor(private formBuilder:FormBuilder, private userService: UserService,   private broadcaster: Broadcaster) { 
     this.valid = false;
